@@ -5,8 +5,6 @@
            goog.net.EventType
            [goog.events EventType]))
 
-(enable-console-print!)
-
 (defn popn [n v]
   (loop [n n res v]
     (if (pos? n)
