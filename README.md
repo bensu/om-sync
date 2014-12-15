@@ -3,7 +3,7 @@
 A reusable synchronization component for
 [Om](http://github.com/swannodette/om).
 
-	[om-sync "0.1.0"]
+	[om-sync "0.1.1"]
 
 ## Example
 
