@@ -5,6 +5,8 @@
            goog.net.EventType
            [goog.events EventType]))
 
+(enable-console-print!)
+
 (defn popn [n v]
   (loop [n n res v]
     (if (pos? n)
@@ -31,7 +33,7 @@
    :post "POST"
    :delete "DELETE"})
 
-(defn edn-xhr [{:keys [method url data on-complete on-error]}]
+(defn edn-xhr [{:keys [method url data on-complete on-error headers]}]
   (let [xhr (XhrIo.)]
     (events/listen xhr goog.net.EventType.SUCCESS
       (fn [e]
@@ -41,4 +43,6 @@
         (on-error {:error (.getResponseText xhr)})))
     (. xhr
       (send url (meths method) (when data (pr-str data))
-        #js {"Content-Type" "application/edn" "Accept" "application/edn"}))))
+            (clj->js (merge {"Content-Type" "application/edn"
+                             "Accept"       "application/edn"}
+                            headers))))))
