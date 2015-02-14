@@ -14,10 +14,10 @@
   :plugins [[lein-cljsbuild "1.0.4"]]
 
   :cljsbuild { 
-              :builds [{:id "test"
-                        :source-paths ["src"]
-                        :compiler {
-                                   :output-to "app.js"
-                                   :output-dir "out"
-                                   :optimizations :none
-                                   :source-map true}}]})
+    :builds [{:id "test"
+              :source-paths ["src"]
+              :compiler {
+                         :output-to "app.js"
+                         :output-dir "out"
+                         :optimizations :none
+                         :source-map true}}]})
