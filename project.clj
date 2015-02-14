@@ -1,4 +1,4 @@
-(defproject om-sync "0.1.22"
+(defproject om-sync "0.1.1"
   :description "A sync component for Om"
   :url "http://github.com/swannodette/om-sync"
   :license {:name "Eclipse Public License"
