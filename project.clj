@@ -17,7 +17,7 @@
     :builds [{:id "test"
               :source-paths ["src"]
               :compiler {
-                         :output-to "app.js"
-                         :output-dir "out"
-                         :optimizations :none
-                         :source-map true}}]})
+                :output-to "app.js"
+                :output-dir "out"
+                :optimizations :none
+                :source-map true}}]})
