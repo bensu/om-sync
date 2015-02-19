@@ -1,9 +1,11 @@
-# om-sync
+# om-syncing
 
-A reusable synchronization component for
-[Om](http://github.com/swannodette/om).
+This is a fork of [om-sync](http://github.com/swannodette/om-sync). It
+has updated dependencies and minor enhancements.
 
-	[om-sync "0.1.1"]
+[![Clojars Project](http://clojars.org/om-syncing/latest-version.svg)](http://clojars.org/om-syncing)
+
+For convenience, here is the original README:
 
 ## Example
 
