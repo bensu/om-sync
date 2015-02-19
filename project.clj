@@ -1,6 +1,6 @@
-(defproject om-sync "0.1.1"
-  :description "A sync component for Om"
-  :url "http://github.com/swannodette/om-sync"
+(defproject om-syncing "0.1.1"
+  :description "Fork of om-sync"
+  :url "http://github.com/bensu/om-syncing"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
